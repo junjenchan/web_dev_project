@@ -1,0 +1,39 @@
+h1 {
+  color: red;
+}
+
+li.orange {
+  color: orange;
+  background-color: #113781;
+}
+
+/*dot notation used for classes (class="")*/
+h1.orange {
+  color: orange;
+}
+
+/*hash notation used for ids (id="")*/
+#id-test {
+  color: blue
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background-color: brown;
+  font-size: 20px;
+  height: 40px;
+  width: 120px;
+  color: white;
+}
+
+button:hover {
+  border: 2px solid brown;
+  background-color: white;
+  color: brown;
+  cursor: pointer;
+}
+
+#fruits, #memes, #content_1 {
+  display: None;
+}

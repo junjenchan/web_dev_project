@@ -1,0 +1,56 @@
+
+<!-- css in html -->
+<style media="screen">
+.style_in_html {
+  color: gold;
+}
+</style>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>This is the title &rang;.&lang;</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jquery import for simplified formatting -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <h1 class="orange">Test Website</h1>
+
+    <button type="button" name="button" class="home" onclick="onHomeButtonClick()">Home</button>
+    <button type="button" name="button" class="fruits" onclick="onFruitsButtonClick()">Fruits</button>
+    <button type="button" name="button" class="memes" onclick="onMemesButtonClick()">Memes</button>
+    <button type="button" name="button" class="content_1" onclick="onContent1ButtonClick()">Content 1</button>
+
+    <div id="home">
+      <h2>Home</h2>
+      <p id="id-test">This is my body :)</p>
+    </div>
+    <br>
+    <div id="fruits">
+      <h2>Fruits</h2>
+      <ol>
+        <li>apple</li>
+        <li class="orange">orange</li>
+        <li>pear</li>
+      </ol>
+    </div>
+    <br>
+    <div id="memes">
+      Start image.
+      <a href="https://blog.bugsnag.com/atom-editor-cheat-sheet/">
+        <br><img src="http://i0.kym-cdn.com/photos/images/facebook/000/101/623/are-u-a-WIZARD0.jpg" width=200 height=300 alt="failed image load!"><br>
+      </a>
+      End image.
+    </div>
+    <br>
+    <div id="content_1">
+      <a id="text_link" href="content_1.html">
+        link to content_1
+      </a>
+    </div>
+  </body>
+</html>
