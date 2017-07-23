@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jen's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- <h1>Jen's Website Heading</h1> -->
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Jen's Food Blog</a>
+          </div>
+
+          <!-- "#" prefix in href means to not reload the page when clicked -->
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link 1<span class="sr-only">(current)</span></a></li>
+              <li><a href="file:///Users/junjen/Documents/Web_Dev_Projects/jun_yeu_class_1/index.html">Link 2</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul> -->
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+
+      <button class="btn btn-success btn-block" type="button" name="button" id="showButton">Show list</button>
+      <button class="btn btn-danger btn-block" type="button" name="button" id="hideButton">Hide list</button>
+
+      <!-- <button type="button" name="button" id="showButton" onclick="ShowButton()">Show list</button> -->
+      <!-- <button type="button" name="button" id="hideButton" onclick="HideButton()">Hide list</button> -->
+
+      <div id="favouriteFoods">
+        <h3>My favourite foods</h3>
+        <ol>
+          <li>Salmon</li>
+          <img class="img1" src="http://www.seriouseats.com/recipes/assets_c/2016/08/20160826-sous-vide-salmon-46-thumb-1500xauto-433927.jpg" alt="salmon">
+          <br>
+          <li>Tuna</li>
+          <img class="img1" src="http://hokkaidosushi.com.vn/images/bung-ca-ngu-o-nha-hang-hokkaido-sachi.jpg" alt="tuna">
+          <br>
+          <li>Chicken</li>
+          <img class="img1" src="https://static01.nyt.com/images/2014/05/12/dining/Roast-Chicken-With-Cumin-Honey-And-Orange/Roast-Chicken-With-Cumin-Honey-And-Orange-superJumbo.jpg" alt="">
+        </ol>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
+          <img class="img2"src="http://cdn-image.foodandwine.com/sites/default/files/styles/rd_home_hero_tout/public/1500389651/harrys-charbroiled-toronto-food-cities-FT-MAG0817.jpg?itok=9JcnPZXQ&timestamp=1500389678" alt="">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <img class="img2"src="http://cdn-image.foodandwine.com/sites/default/files/styles/rd_home_hero_tout/public/1500389651/harrys-charbroiled-toronto-food-cities-FT-MAG0817.jpg?itok=9JcnPZXQ&timestamp=1500389678" alt="">
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <img class="img2"src="http://cdn-image.foodandwine.com/sites/default/files/styles/rd_home_hero_tout/public/1500389651/harrys-charbroiled-toronto-food-cities-FT-MAG0817.jpg?itok=9JcnPZXQ&timestamp=1500389678" alt="">
+
+        </div>
+      </div>
+    </div>  <!-- container end -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
